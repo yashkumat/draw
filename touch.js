@@ -56,16 +56,16 @@ canvas.addEventListener('touchend', e => {
 
 canvas.addEventListener('touchmove', draw);
 
-canvas.addEventListener('mousedown', (e) => {
-    isPainting = true;
-    startX = e.clientX;
-    startY = e.clientY;
-});
+// canvas.addEventListener('mousedown', (e) => {
+//     isPainting = true;
+//     startX = e.clientX;
+//     startY = e.clientY;
+// });
 
-canvas.addEventListener('mouseup', e => {
-    isPainting = false;
-    ctx.stroke();
-    ctx.beginPath();
-});
+// canvas.addEventListener('mouseup', e => {
+//     isPainting = false;
+//     ctx.stroke();
+//     ctx.beginPath();
+// });
 
-canvas.addEventListener('mousemove', draw);
+// canvas.addEventListener('mousemove', draw);
