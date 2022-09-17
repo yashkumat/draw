@@ -42,19 +42,19 @@ const draw = (e) => {
     ctx.stroke();
 }
 
-canvas.addEventListener('touchstart', (e) => {
+canvas.addEventListener('pointerdown', (e) => {
     isPainting = true;
     startX = e.clientX;
     startY = e.clientY;
 });
 
-canvas.addEventListener('touchend', e => {
+canvas.addEventListener('pointerup', e => {
     isPainting = false;
     ctx.stroke();
     ctx.beginPath();
 });
 
-canvas.addEventListener('touchmove', draw);
+canvas.addEventListener('pointermove', draw);
 
 // canvas.addEventListener('mousedown', (e) => {
 //     isPainting = true;
